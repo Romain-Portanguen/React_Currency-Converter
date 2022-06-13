@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 
-// import du fichier scss
 import './header.scss';
 
 function Header({ baseAmount, onBaseAmountChange }) {

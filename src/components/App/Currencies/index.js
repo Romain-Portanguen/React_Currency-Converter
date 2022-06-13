@@ -34,12 +34,12 @@ function Currencies({
 
 Currencies.propTypes = {
   isOpen: PropTypes.bool.isRequired,
-  list: PropTypes.arrayOf( // list est un tableau...
-    PropTypes.shape({ // d'objets...
-      name: PropTypes.string.isRequired, // qui contient ces clés...
+  list: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
       rate: PropTypes.number.isRequired,
-    }).isRequired, // l'objet est obligatoire...
-  ).isRequired, // et le tableau aussi
+    }).isRequired,
+  ).isRequired,
   onCurrencyClick: PropTypes.func.isRequired,
   inputSearchValue: PropTypes.string.isRequired,
   onInputSearchChange: PropTypes.func.isRequired,
