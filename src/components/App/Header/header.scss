@@ -1,0 +1,40 @@
+@use 'src/styles/vars';
+
+.header {
+
+  background-color: vars.$primaryColor;
+  color: vars.$lightColor;
+  padding: 2rem;
+  text-align: center;
+
+
+  &__title {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  &__amount {
+    margin-top: 0.75rem;
+    font-size: 1.75rem;
+  }
+
+  &__input {
+    margin-top: 0.75rem;
+    font-size: 1.1rem;
+    width: 90%;
+    border: none;
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    color: vars.$primaryColor;
+    font-weight: bold;
+    text-align: center;
+
+
+
+    &::placeholder {
+      font-size: 0.9rem;
+      text-align: center;
+      font-weight: normal;
+    }
+  }
+  
+}

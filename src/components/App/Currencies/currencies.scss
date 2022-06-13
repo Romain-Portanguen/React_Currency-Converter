@@ -1,0 +1,54 @@
+@use 'src/styles/vars';
+
+.currencies {
+  background-color: vars.$lightColor;
+  color: vars.$primaryColor;
+  height: 0px;
+  transition: height 0.4s;
+  overflow-y: scroll;
+  scrollbar-color: vars.$primaryColor hsl(15deg 32% 93%);
+
+  &::-webkit-scrollbar {
+    width: 10px; /* Mostly for vertical scrollbars */
+    height: 10px; /* Mostly for horizontal scrollbars */
+  }
+  &::-webkit-scrollbar-thumb { /* Foreground */
+    border-top: 4px solid hsl(15deg 32% 93%);
+    background: vars.$primaryColor;
+  }
+  &::-webkit-scrollbar-track { /* Background */
+    background: hsl(15deg 32% 93%);
+  }
+
+  &--open {
+    height: 250px;
+  }
+
+  &__title {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+  }
+
+  &__list {
+
+    &__item {
+      padding: 0.5rem 1rem;
+      border-top: 1px solid vars.$altColor;
+      cursor: pointer;
+      transition: background-color 1s; 
+
+      &:hover {
+        background-color: vars.$altColor;
+        transition: background-color 0.2s;
+      }
+    }
+  }
+
+  &__search {
+    width: 100%;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: vars.$primaryColor;
+  }
+}
